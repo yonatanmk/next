@@ -1,0 +1,27 @@
+{
+  "name": "next-mobx",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "yonatanmk",
+  "license": "MIT",
+  "dependencies": {
+    "@theme-ui/presets": "^0.10.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv-load": "^2.0.0",
+    "mobx": "^6.3.2",
+    "mobx-react": "^7.2.0",
+    "next": "^9.5.0",
+    "next-connect": "^0.10.1",
+    "next-env": "^1.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "theme-ui": "^0.10.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {}
+}
