@@ -5,28 +5,28 @@ class SampleStore {
   startTime = new Date();
 
   constructor() {
-    // makeAutoObservable(this);
-    makeObservable(this, {
-      counter: observable,
-      increment: action.bound,
-      decrement: action.bound,
-    });
+    makeAutoObservable(this);
+    // makeObservable(this, {
+    //   counter: observable,
+    //   increment: action.bound,
+    //   decrement: action.bound,
+    // });
   }
 
   get elapsedTime() {
     return new Date() - this.startTime + " milliseconds";
   }
 
-  increment() {
+  increment = () => {
     this.counter++;
     console.log(this.counter);
     return this.counter;
-  }
+  };
 
-  decrement() {
+  decrement = () => {
     this.counter--;
     return this.counter;
-  }
+  };
 }
 
 export default SampleStore;
